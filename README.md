@@ -1,8 +1,8 @@
-# memo
- 
+# 졸작진척도발표
+
  https://docs.google.com/presentation/d/1BDdHf1CuZSNxVJaeaejFFSeaQdHEeOdmymcN07mIbrg/edit?usp=sharing
  
-# 지난 메모
+# 중국경제지리 기말 메모
  
 1. 중국 경제의 주요 이슈에 대해 최소 8개 사항을 제시하고 이를 구체적으로 논하라
 경제 연착륙
@@ -59,5 +59,5 @@
 
 8. 위안화 국제화
 
-# 지난 메모
+# 메디치수업 3분발표
 https://docs.google.com/presentation/d/1HqNft6kqN8as9YGrDNU1pw_sJTxIRIENgCoRnQ-cnE8/edit?usp=sharing
