@@ -1,5 +1,5 @@
 # 인공지능 1차 발표자료
-https://app.runwayml.com/
+https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
 
 # 졸작진척도발표
 
