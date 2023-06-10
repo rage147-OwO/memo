@@ -36,9 +36,12 @@ https://cryptocontest.kr/
 # 치아모형생성AI만들기
 미정
 
+<br>
+<br>
 ------------
 # 끝난 일정
-
+<br>
+<br>
 # 인공지능 1차 발표자료
 https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
 
