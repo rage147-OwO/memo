@@ -27,6 +27,12 @@
 기간:  2023/08/31(목)
 https://cryptocontest.kr/
 
+# HTP심리진단 앱 만들기
+미정
+
+# 치아모형생성AI만들기
+미정
+
 
 ~~# 인공지능 1차 발표자료
 https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
