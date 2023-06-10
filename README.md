@@ -43,7 +43,6 @@ https://cryptocontest.kr/
 https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
 
 ~~# 졸작진척도발표
-
  https://docs.google.com/presentation/d/1BDdHf1CuZSNxVJaeaejFFSeaQdHEeOdmymcN07mIbrg/edit?usp=sharing
  
 ~~# 중국경제지리 기말 메모
