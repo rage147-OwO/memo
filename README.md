@@ -39,13 +39,13 @@ https://cryptocontest.kr/
 ------------
 # 끝난 일정
 
-~~# 인공지능 1차 발표자료~~
+# 인공지능 1차 발표자료
 https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
 
-~~# 졸작진척도발표~~
+# 졸작진척도발표
  https://docs.google.com/presentation/d/1BDdHf1CuZSNxVJaeaejFFSeaQdHEeOdmymcN07mIbrg/edit?usp=sharing
  
-~~# 중국경제지리 기말 메모~~
+# 중국경제지리 기말 메모
  
 1. 중국 경제의 주요 이슈에 대해 최소 8개 사항을 제시하고 이를 구체적으로 논하라
 경제 연착륙
