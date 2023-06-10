@@ -1,4 +1,3 @@
-# [끝난일정](http://https://github.com/rage147-OwO/memo#%EB%81%9D%EB%82%9C-%EC%9D%BC%EC%A0%95 "끝난일정")
 
 # Steen작업
 기간: 빠른시일내
