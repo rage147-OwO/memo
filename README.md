@@ -1,11 +1,41 @@
-# 인공지능 1차 발표자료
+# Steen작업
+기간: 빠른시일내
+사다리타기 기능 구현
+
+# AI경진대회 PPT수정, 케글 작성
+6/12일 월요일까지
+
+# 메디치 시험
+6/13
+
+# 2종소형면허
+6/14
+
+# 졸업작품진행도발표
+6/15
+
+# Unity 천체관측 기술 블로그 작성
+미정
+
+# 졸작보고서작성
+6/25일
+
+# 토익시험
+6/25일
+
+# 암호분석경진대회
+기간:  2023/08/31(목)
+https://cryptocontest.kr/
+
+
+~~# 인공지능 1차 발표자료
 https://docs.google.com/presentation/d/1jIv9hyrzdZgW7ljEf-TimC9mCWrsBO9lImue-kz4m6s/edit?usp=sharing
 
-# 졸작진척도발표
+~~# 졸작진척도발표
 
  https://docs.google.com/presentation/d/1BDdHf1CuZSNxVJaeaejFFSeaQdHEeOdmymcN07mIbrg/edit?usp=sharing
  
-# 중국경제지리 기말 메모
+~~# 중국경제지리 기말 메모
  
 1. 중국 경제의 주요 이슈에 대해 최소 8개 사항을 제시하고 이를 구체적으로 논하라
 경제 연착륙
