@@ -1,4 +1,86 @@
+``` resnet50
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Conv2D, BatchNormalization, ReLU, Add, AveragePooling2D, Flatten, Dense
+from tensorflow.keras.models import Model
+
+def resnet_block(x, filters, stride=1):
+    # Shortcut connection
+    shortcut = x
+
+    # First convolutional layer
+    x = Conv2D(filters, kernel_size=1, strides=stride, padding='valid')(x)
+    x = BatchNormalization()(x)
+    x = ReLU()(x)
+
+    # Second convolutional layer
+    x = Conv2D(filters, kernel_size=3, strides=1, padding='same')(x)
+    x = BatchNormalization()(x)
+    x = ReLU()(x)
+
+    # Third convolutional layer
+    x = Conv2D(4*filters, kernel_size=1, strides=1, padding='valid')(x)
+    x = BatchNormalization()(x)
+
+    # Adjust shortcut connection
+    if stride != 1:
+        shortcut = Conv2D(4*filters, kernel_size=1, strides=stride, padding='valid')(shortcut)
+        shortcut = BatchNormalization()(shortcut)
+
+    # Add shortcut connection
+    x = Add()([x, shortcut])
+    x = ReLU()(x)
+
+    return x
+
+def resnet50():
+    inputs = Input(shape=(224, 224, 3))
+
+    # Initial convolutional layers
+    x = Conv2D(64, kernel_size=7, strides=2, padding='same')(inputs)
+    x = BatchNormalization()(x)
+    x = ReLU()(x)
+    x = MaxPooling2D(pool_size=3, strides=2, padding='same')(x)
+
+    # ResNet blocks
+    x = resnet_block(x, 64)
+    x = resnet_block(x, 64)
+    x = resnet_block(x, 64)
+
+    x = resnet_block(x, 128, stride=2)
+    x = resnet_block(x, 128)
+    x = resnet_block(x, 128)
+    x = resnet_block(x, 128)
+
+    x = resnet_block(x, 256, stride=2)
+    x = resnet_block(x, 256)
+    x = resnet_block(x, 256)
+    x = resnet_block(x, 256)
+    x = resnet_block(x, 256)
+    x = resnet_block(x, 256)
+
+    x = resnet_block(x, 512, stride=2)
+    x = resnet_block(x, 512)
+    x = resnet_block(x, 512)
+
+    # Final layers
+    x = AveragePooling2D(pool_size=2)(x)
+    x = Flatten()(x)
+    outputs = Dense(1000, activation='softmax')(x)
+
+    # Create model
+    model = Model(inputs=inputs, outputs=outputs)
+
+    return model
+
+# Create the model
+model = resnet50()
+model.summary()
 ```
+
+
+
+
+``` resnet 34
 def resnet_block(inputs, filters, strides=1):
     # Convolutional block
     x = Conv2D(filters, kernel_size=(3, 3), strides=strides, padding='same')(inputs)
