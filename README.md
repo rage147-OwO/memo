@@ -1,3 +1,58 @@
+```
+def resnet_block(inputs, filters, strides=1):
+    # Convolutional block
+    x = Conv2D(filters, kernel_size=(3, 3), strides=strides, padding='same')(inputs)
+    x = BatchNormalization()(x)
+    x = Activation('relu')(x)
+
+    # Convolutional block
+    x = Conv2D(filters, kernel_size=(3, 3), strides=1, padding='same')(x)
+    x = BatchNormalization()(x)
+
+    # Shortcut connection
+    if strides > 1:
+        inputs = Conv2D(filters, kernel_size=(1, 1), strides=strides, padding='same')(inputs)
+    x = Add()([x, inputs])
+    x = Activation('relu')(x)
+    return x
+
+def ResNet(input_shape, num_classes):
+    inputs = Input(shape=input_shape)
+
+    x = Conv2D(64, kernel_size=(7, 7), strides=2, padding='same')(inputs)
+    x = BatchNormalization()(x)
+    x = Activation('relu')(x)
+    x = tf.keras.layers.MaxPooling2D(pool_size=(3, 3), strides=2, padding='same')(x)
+
+    x = resnet_block(x, filters=64)
+    x = resnet_block(x, filters=64)
+    x = resnet_block(x, filters=64)
+
+    x = resnet_block(x, filters=128, strides=2)
+    x = resnet_block(x, filters=128)
+    x = resnet_block(x, filters=128)
+    x = resnet_block(x, filters=128)
+
+    x = resnet_block(x, filters=256, strides=2)
+    x = resnet_block(x, filters=256)
+    x = resnet_block(x, filters=256)
+    x = resnet_block(x, filters=256)
+    x = resnet_block(x, filters=256)
+    x = resnet_block(x, filters=256)
+
+    x = resnet_block(x, filters=512, strides=2)
+    x = resnet_block(x, filters=512)
+    x = resnet_block(x, filters=512)
+
+    x = GlobalAveragePooling2D()(x)
+    outputs = Dense(num_classes, activation='softmax')(x)
+
+    model = Model(inputs=inputs, outputs=outputs)
+    return model
+```
+
+
+
 
 # Steen작업
 기간: 빠른시일내
