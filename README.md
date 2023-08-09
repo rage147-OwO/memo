@@ -3,6 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, Conv2D, BatchNormalization, ReLU, Add, AveragePooling2D, Flatten, Dense
 from tensorflow.keras.models import Model
 
+
 def resnet_block(x, filters, stride=1):
     # Shortcut connection
     shortcut = x
