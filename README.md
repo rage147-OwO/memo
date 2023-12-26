@@ -8,6 +8,7 @@ def resnet_block(x, filters, stride=1):
     # Shortcut connection
     shortcut = x
 
+
     # First convolutional layer
     x = Conv2D(filters, kernel_size=1, strides=stride, padding='valid')(x)
     x = BatchNormalization()(x)
